@@ -1,0 +1,19 @@
+spring:
+  server:
+    port: 8080
+  datasource:
+    url: jdbc:h2:mem:inventario_de_produtos
+    username: Jumarket
+    password:
+  jpa:
+    show-sql: true
+    hibernate:
+      properties:
+        hibernate.format_sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        trace: false
+        web-allow-others: false
